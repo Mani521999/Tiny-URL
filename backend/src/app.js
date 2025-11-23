@@ -11,8 +11,8 @@ import redirectRouter from './routes/redirect.js';
 const app = express();
 
 app.use(morgan('dev'));
-// app.use(cors({ origin: env.CORS_ORIGIN || '*', credentials: false }));
-app.use(cors({ origin: '*', credentials: false }));
+app.use(cors({ origin: env.CORS_ORIGIN || '*', credentials: false }));
+// app.use(cors({ origin: '*', credentials: false }));
 app.use(express.json());
 
 // Health check
